@@ -1,34 +1,52 @@
-site_name: CME Wiki
-site_url: https://USERNAME.github.io/CME-Wiki/
-repo_url: https://github.com/USERNAME/CME-Wiki
-repo_name: CME-Wiki
+site_name: CME World Wiki
+site_url: https://wiki.cmeworld.fun 
 
 theme:
   name: material
   language: ru
   features:
-    - navigation.instant       # мгновенная навигация без перезагрузки
-    - navigation.tracking      # подсветка активного раздела
-    - navigation.sections      # секции в боковом меню
-    - search.suggest           # умный поиск
-    - search.highlight         # подсветка в поиске
-    - toc.integrate            # оглавление в боковом меню
+    - navigation.instant
+    - navigation.tracking
+        - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - toc.integrate
+    - navigation.footer
+  logo: assets/logo.png
   palette:
-    - scheme: default
-      primary: indigo
-      accent: blue
     - scheme: slate
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/weather-night
-        name: Тёмная тема
+      primary: deep purple  # можно оставить любой
+      accent: deep purple
+      dark: true
+  font:
+    code: Epunda Slab 
+  font: false
+
+
+
+extra:
+  homepage: https://wiki.cmeworld.fun # опционально
 
 plugins:
   - search
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+  - git-authors            # покажет авторов на странице
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  
 nav:
   - Главная: index.md
-  - Руководство: guide.md
-  - FAQ: faq.md
-  - О проекте: about.md
+  - Simple Voice Chat: Simple-Voice-Chat.md
+  - Core Protect: Core-Protect.md
+  - BlueMap: Bluemap.md
+  - Emotecraft: Emotecraft.md
+  - Кастомные крафты: Custom-craft.md
+  - Система скинов: Skins-Resrtorer.md
+  - Оптимизация жителей: Vilager-Trade.md
