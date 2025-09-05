@@ -1,0 +1,34 @@
+site_name: CME Wiki
+site_url: https://USERNAME.github.io/CME-Wiki/
+repo_url: https://github.com/USERNAME/CME-Wiki
+repo_name: CME-Wiki
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.instant       # мгновенная навигация без перезагрузки
+    - navigation.tracking      # подсветка активного раздела
+    - navigation.sections      # секции в боковом меню
+    - search.suggest           # умный поиск
+    - search.highlight         # подсветка в поиске
+    - toc.integrate            # оглавление в боковом меню
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+
+plugins:
+  - search
+
+nav:
+  - Главная: index.md
+  - Руководство: guide.md
+  - FAQ: faq.md
+  - О проекте: about.md
