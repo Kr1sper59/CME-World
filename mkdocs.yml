@@ -15,7 +15,6 @@ theme:
     - scheme: slate
       primary: deep purple  # можно оставить любой
       accent: deep purple
-      dark: true
   font:
     code: Roboto mono
 
@@ -36,13 +35,13 @@ markdown_extensions:
   - pymdownx.superfences
   
 nav:
-  - Главная: index.md
-  - Вики:
-    - Главная: Wiki/Wiki.md 
-    - Simple Voice Chat: Wiki/Simple-Voice-Chat.md
-    - Core Protect: Wiki/Core-Protect.md
-    - BlueMap: Wiki/Bluemap.md
-    - Emotecraft: Wiki/Emotecraft.md
-    - Кастомные крафты: Wiki/Custom-craft.md
-    - Система скинов: Wiki/Skins-Resrtorer.md
-    - Оптимизация жителей: Wiki/Vilager-Trade.md
+  - 🏠 Главная: index.md
+  - 📃 Вики:
+    - 🏠 Главная: Wiki/Wiki.md 
+    - 🎙 Simple Voice Chat: Wiki/Simple-Voice-Chat.md
+    - 🛡 Core Protect: Wiki/Core-Protect.md
+    - 🗺 BlueMap: Wiki/Bluemap.md
+    - 😀 Emotecraft: Wiki/Emotecraft.md
+    - 🛠 Кастомные крафты: Wiki/Custom-craft.md
+    - 👕 Система скинов: Wiki/Skins-Resrtorer.md
+    - 👨‍🌾 Оптимизация жителей: Wiki/Vilager-Trade.md
