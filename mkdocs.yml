@@ -37,7 +37,8 @@ markdown_extensions:
   
 nav:
   - Главная: index.md
-  - Wiki: 
+  - Вики:
+    - Главная: Wiki/index.md 
     - Simple Voice Chat: Wiki/Simple-Voice-Chat.md
     - Core Protect: Wiki/Core-Protect.md
     - BlueMap: Wiki/Bluemap.md
