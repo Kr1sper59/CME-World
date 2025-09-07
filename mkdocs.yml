@@ -22,7 +22,7 @@ theme:
 
 
 extra:
-  homepage: https://wiki.cmeworld.fun # опционально
+  homepage: https://www.cmeworld.fun # опционально
 
 plugins:
   - search
