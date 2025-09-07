@@ -1,4 +1,4 @@
-site_name: CME World Wiki
+site_name: CME World 
 site_url: https://wiki.cmeworld.fun 
 
 theme:
@@ -6,12 +6,10 @@ theme:
   language: ru
   features:
     - navigation.instant
-    - navigation.tracking
-        - navigation.sections
+    - navigation.indexes
+    - navigation.tabs
     - navigation.expand
-    - search.highlight
-    - toc.integrate
-    - navigation.footer
+
   logo: assets/logo.png
   palette:
     - scheme: slate
@@ -19,8 +17,7 @@ theme:
       accent: deep purple
       dark: true
   font:
-    code: Epunda Slab 
-  font: false
+    code: Roboto mono
 
 
 
@@ -29,10 +26,7 @@ extra:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: date
-      enable_creation_date: true
-  - git-authors            # покажет авторов на странице
+
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -43,10 +37,11 @@ markdown_extensions:
   
 nav:
   - Главная: index.md
-  - Simple Voice Chat: Simple-Voice-Chat.md
-  - Core Protect: Core-Protect.md
-  - BlueMap: Bluemap.md
-  - Emotecraft: Emotecraft.md
-  - Кастомные крафты: Custom-craft.md
-  - Система скинов: Skins-Resrtorer.md
-  - Оптимизация жителей: Vilager-Trade.md
+  - Wiki: 
+    - Simple Voice Chat: Wiki/Simple-Voice-Chat.md
+    - Core Protect: Wiki/Core-Protect.md
+    - BlueMap: Wiki/Bluemap.md
+    - Emotecraft: Wiki/Emotecraft.md
+    - Кастомные крафты: Wiki/Custom-craft.md
+    - Система скинов: Wiki/Skins-Resrtorer.md
+    - Оптимизация жителей: Wiki/Vilager-Trade.md
