@@ -8,7 +8,7 @@ theme:
     - navigation.instant
     - navigation.indexes
     - navigation.tabs
-    - navigation.expand
+    - navigation.tabs.sticky
 
   logo: assets/logo.png
   palette:
@@ -20,11 +20,12 @@ theme:
 
 
 
+
 extra:
   homepage: https://www.cmeworld.fun # опционально
 
-plugins:
-  - search
+plugins: []
+
 
 
 markdown_extensions:
