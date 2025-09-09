@@ -17,7 +17,8 @@ theme:
       accent: deep purple
   font:
     code: Roboto mono
-
+extra_css:
+  - css/main.css
 
 
 
