@@ -17,8 +17,14 @@ theme:
       accent: deep purple
   font:
     code: Roboto mono
+
+  custom_dir: overrides
 extra_css:
   - css/main.css
+
+extra_javascript:
+  - 'js/main.js'
+
 
 
 
@@ -37,9 +43,11 @@ markdown_extensions:
   - pymdownx.superfences
   
 nav:
-  - 🏠 Главная: index.md
+  - 📜 Информация:
+     - 🏠 Главная: index.md
+     - 📖 Правила: Rules.md 
   - 📃 Вики:
-    - 🏠 Главная: Wiki/Wiki.md 
+    - 🏠 Главная: Wiki/index.md 
     - 🎙 Simple Voice Chat: Wiki/Simple-Voice-Chat.md
     - 🛡 Core Protect: Wiki/Core-Protect.md
     - 🗺 BlueMap: Wiki/Bluemap.md
