@@ -104,7 +104,7 @@ button:hover, .md-button:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-    height: 112px;
+    height: 60px;
     left: 0;
     right: 0;
     backdrop-filter: blur(10px);
@@ -307,4 +307,8 @@ html {
 *:focus {
     outline: none;
     box-shadow: none !important;
+}
+
+.md-footer *:contains("Made with Material") {
+    display: none !important;
 }
