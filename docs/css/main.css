@@ -302,8 +302,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .md-nav__link {
   transition: transform 0.2s ease;
 }
