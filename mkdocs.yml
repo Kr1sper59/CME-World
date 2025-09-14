@@ -5,10 +5,8 @@ theme:
   name: material
   language: ru
   features:
-    - navigation.instant
     - navigation.indexes
     - navigation.tabs
-    - navigation.tabs.sticky
 
   logo: assets/logo.png
   palette:
