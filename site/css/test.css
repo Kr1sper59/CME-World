@@ -100,7 +100,7 @@ button:hover, .md-button:hover {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    position: fixed;
+    position: flex;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -159,13 +159,12 @@ button:hover, .md-button:hover {
 .md-main {
     display: flex;
     flex-direction: row;
-    margin-top: 96px;
     min-height: calc(100vh - 96px);
 }
 
 .md-sidebar {
     position: fixed;
-    top: 96px;
+    top: px;
     width: 280px;
     flex-shrink: 0;
     height: calc(100vh - 96px);
@@ -303,12 +302,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/* --- Убираем лишние тени и выделения --- */
-*:focus {
-    outline: none;
-    box-shadow: none !important;
+
+
+.md-nav__link {
+  transition: transform 0.2s ease;
 }
 
-.md-footer *:contains("Made with Material") {
-    display: none !important;
+.md-nav__link:hover {
+  transform: translateX(5px); /* двигается вправо */
+}
+
+/* Исправляем белый фон под "Содержание" */
+.md-nav--secondary .md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
 }
