@@ -1,5 +1,4 @@
-# 🎙 Simple Voice Chat Guide
-
+# 🎙 Simple Voice Chat
 
 **Simple Voice Chat** добавляет полноценный голосовой чат в Minecraft.
 
