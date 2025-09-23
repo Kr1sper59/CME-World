@@ -9,6 +9,7 @@ theme:
     - navigation.tabs
 
   logo: assets/logo.png
+  favicon: assets/CME World logo border.png
   palette:
     - scheme: slate
       primary: deep purple  # можно оставить любой
