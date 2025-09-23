@@ -1,6 +1,6 @@
 Ниже перечислены все новые блоки и предметы, добавленные MC Paint.
 
-# Блоки
+## Блоки
 | Блок | Предмет | Описание |
 |:----:|:----:|:----|
 | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/blocks/studio.png?raw=true" alt="Студия" width="100"/> | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/items/studio.png?raw=true" alt="Студия" width="100"/> | **Студия**  
@@ -10,7 +10,7 @@
 | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/blocks/paint_bucket.png?raw=true" alt="Ведро краски" width="100"/> | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/items/paint_bucket.png?raw=true" alt="Ведро краски" width="100"/> | **Ведро краски**  
 Позволяет сохранять дополнительные цвета в палитре и может использоваться как декорация. | v1.3 |
 
-# Предметы
+## Предметы
 | Иконка | Описание | 
 |:----:|:----|
 | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/items/brush.png?raw=true" alt="Кисть" width="100"/> | **Кисть**  

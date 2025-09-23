@@ -1,4 +1,4 @@
-# Ведро краски
+## Ведро краски
 
 <p align="center">
 <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/img/paint_buckets.png?raw=true" alt="Рисуем вишнёвый закат" width="600"/>

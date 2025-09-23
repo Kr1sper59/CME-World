@@ -41,9 +41,10 @@ markdown_extensions:
   - pymdownx.superfences
   
 nav:
-  - 📜 Информация:
+  - 🏠 Главная:
      - 🏠 Главная: index.md
-     - 📖 Правила: Rules.md 
+     - 📖 Правила: Rules.md
+     - 📜 Полезные моды: Dependencies.md 
   - 📃 Вики:
     - 🏠 Главная: Wiki/index.md 
     - 🎙 Simple Voice Chat: Wiki/Simple-Voice-Chat.md
