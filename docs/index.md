@@ -16,7 +16,9 @@
 ---
 
 ## ❗ IP Сервера:
-```cmeworld.fun```
+```
+cmeworld.fun
+```
 
 
 ---
