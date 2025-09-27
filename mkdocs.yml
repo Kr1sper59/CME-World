@@ -45,7 +45,8 @@ nav:
   - 🏠 Главная:
      - 🏠 Главная: index.md
      - 📖 Правила: Rules.md
-     - 📜 Полезные моды: Dependencies.md 
+     - 📜 Полезные моды: Modpack.md
+     - 🗃️ Архив миров: World archve.md
   - 📃 Вики:
     - 🏠 Главная: Wiki/index.md 
     - 🎙 Simple Voice Chat: Wiki/Simple-Voice-Chat.md
