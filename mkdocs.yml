@@ -1,5 +1,5 @@
 site_name: CME World 
-site_url: https://wiki.cmeworld.fun 
+site_url: https://cmeworld.fun 
 
 theme:
   name: material
@@ -28,7 +28,7 @@ extra_javascript:
 
 
 extra:
-  homepage: https://www.cmeworld.fun # опционально
+  homepage: https://cmeworld.fun # опционально
 
 plugins: []
 
