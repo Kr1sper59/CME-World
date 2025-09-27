@@ -19,7 +19,7 @@ theme:
 
   custom_dir: overrides
 extra_css:
-  - css/test.css
+  - css/main.css
 
 extra_javascript:
   - 'js/main.js'
