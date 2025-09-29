@@ -26,5 +26,3 @@ cmeworld.fun
 - [CME World Hub](https://github.com/Kr1sper59/CME-World-Hub)
 
 **✨ Присоединяйся к нам и стань частью мира Minecraft!**
-
----
