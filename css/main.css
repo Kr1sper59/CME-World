@@ -322,6 +322,14 @@ button:hover, .md-button:hover {
     font-weight: 600;
 }
 
+/* Подсветка активной вкладки по классу темы на <li> */
+.md-tabs__item--active > .md-tabs__link {
+    background-color: rgba(124, 58, 237, 0.2) !important;
+    color: #b093f0 !important;
+    font-weight: 600 !important;
+    border-radius: 10px;
+}
+
 /* --- Основной контейнер --- */
 .md-main {
     display: flex;
