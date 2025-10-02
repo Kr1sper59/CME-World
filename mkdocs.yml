@@ -22,7 +22,7 @@ extra_css:
   - css/main.css
 
 extra_javascript:
-  - 'js/main.js'
+  - 'js/'
 
 
 
