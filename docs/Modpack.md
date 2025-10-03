@@ -8,6 +8,9 @@
 [Emotecraft](https://modrinth.com/plugin/emotecraft)
 > Добавляет колесо эмоций
 
+[Bendable Cuboids](https://modrinth.com/mod/bendable-cuboids)
+> Вспомогательная библиотека для правильного сгибания конечностей в моде Emotecraft при использовании Sodium
+
 [Bobby](https://modrinth.com/mod/bobby)
 > Мод позволяет кэшировать чанки что значительно ускоряет их загрузку и позволяет ставить прогрузку мира выше чем на сервере
 
@@ -27,7 +30,7 @@
 ### 2. Ручная установка
 Если ваш лаунчер не поддерживает установку через [Modrinth](https://modrinth.com), выполните следующие шаги:
 
-1. [Скачайте сборку](/CME World.zip).
+1. [Скачайте сборку](/CME-World.zip).
 2. Создайте новую сборку с такими параметрами:  
    - **Loader:** Fabric  
    - **Game version:** 1.21.8
