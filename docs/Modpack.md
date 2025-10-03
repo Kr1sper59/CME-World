@@ -27,7 +27,7 @@
 ### 2. Ручная установка
 Если ваш лаунчер не поддерживает установку через [Modrinth](https://modrinth.com), выполните следующие шаги:
 
-1. [Перейдите в релизы проекта на GitHub](https://github.com/Kr1sper59/CME-World-Hub/releases) и скачайте последний файл `CME.World.zip`.
+1. [Скачайте сборку](/CME World.zip).
 2. Создайте новую сборку с такими параметрами:  
    - **Loader:** Fabric  
    - **Game version:** 1.21.8
