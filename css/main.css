@@ -2,28 +2,12 @@
 
 /* --- Общие настройки --- */
 body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'JetBrainsMono', Arial, sans-serif;
     background-color: #0c0c12;
     color: #e0e0e0;
-    line-height: 1.6;
+    line-height: 0;
     margin: 0;
     padding: 0;
-}
-
-/* --- Убираем обводку везде --- */
-* {
-    outline: none !important;
-}
-
-/* --- Глобальные стили выделения --- */
-::selection {
-    background-color: #0969da !important;
-    color: #ffffff !important;
-}
-
-::-moz-selection {
-    background-color: #0969da !important;
-    color: #ffffff !important;
 }
 
 /* --- Заголовки --- */
@@ -33,17 +17,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #b093f0;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-}
-
-/* --- Ссылки --- */
-a {
-    color: #b093f0;
-    text-decoration: none !important;
-    transition: color 0.2s;
-}
-
-a:hover {
-    color: #d4bbff;
 }
 
 pre {
@@ -58,154 +31,6 @@ pre {
     font-size: 0.8rem;
     line-height: 1.4;
     position: relative;
-}
-
-/* Скрываем скроллбары или делаем их незаметными */
-pre::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background: transparent;
-}
-
-pre::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-pre::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-
-pre::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
-
-pre code {
-    background: transparent !important;
-    border: none !important;
-    padding: 0;
-    color: inherit !important;
-}
-
-/* Стили для разных языков программирования */
-.highlight {
-    background-color: #0d1117 !important;
-    border: 1px solid #30363d !important;
-    border-radius: 6px !important;
-    overflow: hidden;
-}
-
-.highlight pre {
-    background-color: transparent !important;
-    border: none !important;
-    margin: 0;
-    padding: 12px;
-    position: relative;
-}
-
-/* Скрываем скроллбары для highlight блоков */
-.highlight::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background: transparent;
-}
-
-.highlight::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.highlight::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-
-.highlight::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-}
-
-/* Номера строк */
-.linenos {
-    color: #8b949e !important;
-    background-color: #161b22 !important;
-    padding: 12px 8px 12px 12px !important;
-    border-right: 1px solid #30363d !important;
-    margin-right: 12px !important;
-}
-
-/* Кнопка копирования в стиле GitHub */
-.copy-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: transparent !important;
-    color: #7d8590 !important;
-    border: none !important;
-    border-radius: 6px !important;
-    padding: 8px !important;
-    width: 32px !important;
-    height: 32px !important;
-    cursor: pointer !important;
-    opacity: 0;
-    transition: opacity 0.2s ease !important;
-    z-index: 10 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.copy-button:hover {
-    background-color: #30363d !important;
-    color: #f0f6fc !important;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.copy-button:focus {
-    background-color: #30363d !important;
-    color: #f0f6fc !important;
-    transform: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.copy-button:active {
-    background-color: #21262d !important;
-    color: #f0f6fc !important;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.copy-button svg {
-    width: 16px !important;
-    height: 16px !important;
-    fill: currentColor !important;
-}
-
-pre:hover .copy-button {
-    opacity: 1;
-}
-
-.copy-button:hover {
-    background-color: #30363d;
-    border-color: #8b949e;
-}
-
-.copy-button.copied {
-    background-color: transparent !important;
-    color: #3fb950 !important;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.copy-button.copied:hover {
-    background-color: transparent !important;
-    color: #3fb950 !important;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.copy-button.copied svg {
-    fill: #3fb950 !important;
 }
 
 /* --- Таблицы --- */
@@ -227,23 +52,6 @@ th, td {
 th {
     background-color: transparent !important;
     font-weight: 600;
-}
-
-/* --- Кнопки --- */
-button, .md-button {
-    background-color: transparent !important;
-    color: #f5f5f5;
-    border: none !important;
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.2s;
-}
-
-button:hover, .md-button:hover {
-    transform: scale(1.03);
-    background-color: rgba(124, 58, 237, 0.1);
 }
 
 /* --- Верхняя панель --- */
@@ -294,42 +102,6 @@ button:hover, .md-button:hover {
     display: block !important;
     margin: 0.5rem 0;
 }
-
-/* Полностью отключаем hover эффекты для всех вкладок */
-.md-tabs__link:hover {
-    background-color: inherit !important;
-    color: inherit !important;
-    font-weight: inherit !important;
-    transform: none !important;
-    transition: none !important;
-}
-
-/* Отключаем все анимации и переходы для вкладок */
-.md-tabs__link {
-    transition: none !important;
-    transform: none !important;
-}
-
-.md-tabs__link:hover {
-    transition: none !important;
-    transform: none !important;
-}
-
-
-.md-tabs__link--active {
-    background-color: rgba(124, 58, 237, 0.2) !important;
-    color: #b093f0 !important;
-    font-weight: 600;
-}
-
-/* Подсветка активной вкладки по классу темы на <li> */
-.md-tabs__item--active > .md-tabs__link {
-    background-color: rgba(124, 58, 237, 0.2) !important;
-    color: #b093f0 !important;
-    font-weight: 600 !important;
-    border-radius: 10px;
-}
-
 /* --- Основной контейнер --- */
 .md-main {
     display: flex;
@@ -340,9 +112,9 @@ button:hover, .md-button:hover {
 .md-sidebar {
     position: fixed;
     top: 60px;
-    width: 280px;
+    width: 350px;
     flex-shrink: 0;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 0px);
     overflow-y: auto;
     background-color: transparent !important;
     z-index: 100;
@@ -388,15 +160,6 @@ button:hover, .md-button:hover {
     text-decoration: none !important;
 }
 
-/* --- Подсветка активного элемента боковой панели --- */
-.md-nav__link--active,
-.md-nav__item--active > .md-nav__link {
-    background-color: rgba(124, 58, 237, 0.2) !important;
-    color: #b093f0 !important;
-    font-weight: 600 !important;
-    border-radius: 6px;
-}
-
 /* --- Остальные ссылки боковой панели прозрачные --- */
 .md-nav__link:hover,
 .md-nav__toggle:checked + .md-nav__link,
@@ -412,21 +175,6 @@ label:active {
     box-shadow: none !important;
 }
 
-/* --- Подсветка блоков внимания --- */
-.admonition {
-    border-left: 4px solid #7c3aed;
-    background-color: transparent !important;
-    padding: 12px 16px;
-    border-radius: 6px;
-    margin: 15px 0;
-}
-
-.admonition-title {
-    background-color: transparent !important;
-    color: #b093f0 !important;
-    font-weight: 600;
-}
-
 /* --- Изображения --- */
 img {
     max-width: 100%;
@@ -438,20 +186,6 @@ img:hover {
     transform: scale(1.02);
 }
 
-/* --- Горизонтальные линии --- */
-hr {
-    border: none;
-    margin: 2em 0;
-}
-
-/* --- Футер --- */
-.md-footer {
-    background-color: transparent !important;
-    border: none !important;
-    margin-left: 280px;
-    margin-right: 280px;
-    width: calc(100% - 560px);
-}
 
 /* --- Фоновая анимация --- */
 body::before {
@@ -479,8 +213,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .md-nav__link {
   transition: transform 0.2s ease;
 }
@@ -499,13 +231,6 @@ html {
 .md-nav--secondary .md-nav__title {
   background: transparent !important;
   box-shadow: none !important;
-}
-
-/* Убираем подсветку активного элемента в содержании */
-.md-nav--secondary .md-nav__link--active {
-  background-color: transparent !important;
-  color: #c0c0c0 !important;
-  font-weight: normal !important;
 }
 
 
@@ -551,28 +276,15 @@ body::before {
   will-change: background-position;
 }
 
-
-/* --- Дополнительные стили для admonitions --- */
-.admonition.info {
-  border-left-color: #3b82f6;
+/* --- Эффект при наведении на табы сверху --- */
+.md-tabs__link {
+    transition: all 0.25s ease-in-out;
 }
 
-.admonition.warning {
-  border-left-color: #f59e0b;
+.md-tabs__link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* полупрозрачный белый */
+    border: none
+    color: #ffffff !important; /* текст чуть ярче при наведении */
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1); /* мягкое свечение */
 }
 
-.admonition.danger {
-  border-left-color: #ef4444;
-}
-
-.admonition-title.info {
-  color: #3b82f6 !important;
-}
-
-.admonition-title.warning {
-  color: #f59e0b !important;
-}
-
-.admonition-title.danger {
-  color: #ef4444 !important;
-}
