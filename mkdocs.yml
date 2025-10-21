@@ -7,33 +7,22 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
-
-  logo: assets/logo.png
+  logo: assets/CME World logo border.png
   favicon: assets/CME World logo border.png
   palette:
-    - scheme: slate
-      primary: deep purple  # можно оставить любой
-      accent: deep purple
+    scheme: slate
+    primary: deep purple 
+    accent: deep purple 
   font:
-    code: Roboto mono
-
+    code: JetBrainsMono
   custom_dir: overrides
 extra_css:
   - css/main.css
-
 extra_javascript:
   - 'js/'
-
-
-
-
 extra:
-  homepage: https://cmeworld.fun # опционально
-
+  homepage: https://cmeworld.fun 
 plugins: []
-
-
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -42,25 +31,28 @@ markdown_extensions:
   - pymdownx.superfences
   
 nav:
-  - 🏠 Главная:
-     - 🏠 Главная: index.md
-     - 📖 Правила: Rules.md
-     - 📜 Полезные моды: Modpack.md
-     - 🗃️ Архив миров: World archve.md
-  - 📃 Вики:
-    - 🏠 Главная: Wiki/index.md 
-    - 🎙 Simple Voice Chat: Wiki/Simple-Voice-Chat.md
-    - 🛡 Core Protect: Wiki/Core-Protect.md
-    - 🗺 BlueMap: Wiki/Bluemap.md
-    - 😀 Emotecraft: Wiki/Emotecraft.md
-    - 🎨 MC Paint:
-      - 🏠 Главная: Wiki/MC-Paint/MC-Paint.md
-      - 🪛 Блоки: Wiki/MC-Paint/Additions.md
-      - 🎨 Студия: Wiki/MC-Paint/Studio.md
-      - 🪣 Ведро с краской: Wiki/MC-Paint/Paint-Bucket.md
-      - 🔧 Инструменты: Wiki/MC-Paint/Custom-Painting-Modifiers.md
-      - 📤 Обмен картинами: Wiki/MC-Paint/Sharing-paintings.md
-    - 🛠 Кастомные крафты: Wiki/Custom-craft.md
-    - 🧭 Локатор игроков: Wiki/Locator-bar.md
-    - 👕 Система скинов: Wiki/Skins-Resrtorer.md
-    - 👨‍🌾 Оптимизация жителей: Wiki/Vilager-Trade.md
+  -  О сервере:
+     -  О сервере: index.md
+  -  Правила:
+     -  Правила: Rules/index.md
+  -  Полезные моды:
+     -  Полезные моды: Modpack/index.md
+  -  Архив миров:
+     -  Архив миров: World-archve/index.md
+  -  Вики:
+      -  Вики: Wiki/index.md 
+      -  Simple Voice Chat: Wiki/Simple-Voice-Chat.md
+      -  Core Protect: Wiki/Core-Protect.md
+      -  BlueMap: Wiki/Bluemap.md
+      -  Emotecraft: Wiki/Emotecraft.md
+      -  MC Paint:
+          - Главная: Wiki/MC-Paint/MC-Paint.md
+          - Блоки: Wiki/MC-Paint/Additions.md
+          - Студия: Wiki/MC-Paint/Studio.md
+          - Ведро с краской: Wiki/MC-Paint/Paint-Bucket.md
+          - Инструменты: Wiki/MC-Paint/Custom-Painting-Modifiers.md
+          - Обмен картинами: Wiki/MC-Paint/Sharing-paintings.md
+      -  Кастомные крафты: Wiki/Custom-craft.md
+      -  Локатор игроков: Wiki/Locator-bar.md
+      -  Система скинов: Wiki/Skins-Resrtorer.md
+      -  Оптимизация жителей: Wiki/Vilager-Trade.md
