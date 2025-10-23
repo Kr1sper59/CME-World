@@ -1,8 +1,6 @@
-/* === Базовые стили === */
-html {
-    scroll-behavior: smooth;
-}
+/* docs/css/extra.css */
 
+/* --- Общие настройки --- */
 body {
     font-family: 'JetBrainsMono', Arial, sans-serif;
     background-color: #18181B;
@@ -12,7 +10,7 @@ body {
     padding: 0;
 }
 
-/* === Заголовки === */
+/* --- Заголовки --- */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -21,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em;
 }
 
-/* === Блок кода === */
 pre {
     background-color: #0d1117 !important;
     color: #e6edf3 !important;
@@ -36,7 +33,7 @@ pre {
     position: relative;
 }
 
-/* === Таблицы === */
+/* --- Таблицы --- */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -57,7 +54,7 @@ th {
     font-weight: 600;
 }
 
-/* === Верхняя панель === */
+/* --- Верхняя панель --- */
 .md-header {
     background-color: transparent !important;
     border: none !important;
@@ -87,7 +84,7 @@ th {
     margin: 0 !important;
 }
 
-/* === Вкладки (табы) === */
+/* --- Вкладки (Табы) --- */
 .md-tabs {
     display: flex !important;
     background-color: transparent !important;
@@ -103,18 +100,9 @@ th {
     border-radius: 20px;
     color: #e0dede !important;
     display: block !important;
-    margin: 0;
-    transition: all 0.25s ease-in-out;
+    margin: 0rem 0;
 }
-
-.md-tabs__link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: #ffffff !important;
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
-}
-
-/* === Основной макет === */
+/* --- Основной контейнер --- */
 .md-main {
     display: flex;
     flex-direction: row;
@@ -151,7 +139,7 @@ th {
     background-color: transparent !important;
 }
 
-/* === Навигация в сайдбаре === */
+/* --- Навигация в сайдбаре --- */
 .md-nav {
     background-color: transparent !important;
 }
@@ -170,39 +158,9 @@ th {
     color: #c0c0c0 !important;
     background-color: transparent !important;
     text-decoration: none !important;
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
-    will-change: transform, background-color, box-shadow;
 }
 
-.md-nav__link:hover,
-.md-nav__toggle:checked + .md-nav__link,
-.md-nav__toggle:checked + label,
-.md-nav__link:focus,
-.md-nav__link:active,
-label:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: #ffffff !important;
-    box-shadow: none !important;
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* === Активные и hover-состояния === */
-.md-sidebar--primary .md-nav__link--active {
-    background-color: none;
-    color: #A379DF !important;
-    box-shadow: none;
-}
-
-.md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(10px);
-}
-
-.md-sidebar--secondary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(-10px);
-}
-
-/* === Изображения === */
+/* --- Изображения --- */
 img {
     max-width: 100%;
     border-radius: 6px;
@@ -213,7 +171,8 @@ img:hover {
     transform: scale(1.02);
 }
 
-/* === Фоновая анимация === */
+
+/* --- Фоновая анимация --- */
 body::before {
     content: "";
     position: fixed;
@@ -226,7 +185,6 @@ body::before {
     z-index: -1;
     pointer-events: none;
     animation: move-bg 60s linear infinite;
-    will-change: background-position;
 }
 
 @keyframes move-bg {
@@ -235,45 +193,107 @@ body::before {
     100% { background-position: 0 0, 100% 100%; }
 }
 
-/* === Вторичная навигация === */
-.md-nav--secondary .md-nav__title {
-    background: transparent !important;
-    box-shadow: none !important;
+/* --- Плавная прокрутка --- */
+html {
+    scroll-behavior: smooth;
 }
 
-/* === Адаптивность === */
+.md-nav__link {
+  transition: transform 0.2s ease;
+}
+
+/* Исправляем белый фон под "Содержание" */
+.md-nav--secondary .md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* --- Адаптивность для мобильных устройств --- */
 @media (max-width: 1220px) {
-    .md-sidebar {
-        width: 240px;
-        height: calc(100vh - 60px);
-    }
-
-    .md-content {
-        margin-left: 240px !important;
-        margin-right: 240px !important;
-    }
-
-    .md-footer {
-        margin-left: 240px;
-        margin-right: 240px;
-        width: calc(100% - 480px);
-    }
+  .md-sidebar {
+    width: 240px;
+    height: calc(100vh - 60px);
+  }
+  
+  .md-content {
+    margin-left: 240px !important;
+    margin-right: 240px !important;
+  }
+  
+  .md-footer {
+    margin-left: 240px;
+    margin-right: 240px;
+    width: calc(100% - 480px);
+  }
 }
 
 @media (max-width: 768px) {
-    .md-sidebar {
-        display: none;
-    }
+  .md-sidebar {
+    display: none;
+  }
+  
+  .md-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 1rem;
+  }
+  
+  .md-footer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
 
-    .md-content {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding: 1rem;
-    }
+/* --- Улучшения производительности --- */
+body::before {
+  will-change: background-position;
+}
 
-    .md-footer {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
+/* --- Эффект при наведении на табы сверху --- */
+.md-tabs__link {
+    transition: all 0.25s ease-in-out;
+}
+
+.md-tabs__link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff !important; 
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1); 
+}
+
+/* Общие состояния навигационных ссылок */
+.md-nav__link:hover,
+.md-nav__toggle:checked + .md-nav__link,
+.md-nav__toggle:checked + label,
+.md-nav__link:focus,
+.md-nav__link:active,
+label:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* --- Подсветка и плавное движение вкладок по бокам (исправлен двойной hover) --- */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--secondary .md-nav__link {
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform, background-color, box-shadow;
+}
+/* --- Активный пункт (index.md и текущие страницы) --- */
+.md-sidebar--primary .md-nav__link--active{
+    background-color: none;
+    color: #A379DF !important;
+    box-shadow: none;
+}
+
+/* --- Плавное движение при наведении --- */
+.md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
+    transform: translateX(10px);
+}
+
+.md-sidebar--secondary .md-nav__link:hover:not(.md-nav__link--active) {
+    transform: translateX(-10px);
 }

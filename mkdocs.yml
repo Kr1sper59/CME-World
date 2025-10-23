@@ -7,6 +7,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
+    - navigation.expand
   logo: assets/CME World logo border.png
   favicon: assets/CME World logo border.png
   palette:
@@ -19,7 +20,7 @@ theme:
 extra_css:
   - css/main.css
 extra_javascript:
-  - 'js/'
+  - 'js/main.js'
 extra:
   homepage: https://cmeworld.fun 
 plugins: []
