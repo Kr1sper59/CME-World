@@ -7,7 +7,6 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
-    - navigation.expand
   logo: assets/CME World logo border.png
   favicon: assets/CME World logo border.png
   palette:
@@ -41,11 +40,15 @@ nav:
   -  Архив миров:
      -  Архив миров: World-archve/index.md
   -  Вики:
-      -  Вики: Wiki/index.md 
+      -  Вики: Wiki/index.md
       -  Simple Voice Chat: Wiki/Simple-Voice-Chat.md
       -  Core Protect: Wiki/Core-Protect.md
       -  BlueMap: Wiki/Bluemap.md
       -  Emotecraft: Wiki/Emotecraft.md
+      -  Кастомные крафты: Wiki/Custom-craft.md
+      -  Локатор игроков: Wiki/Locator-bar.md
+      -  Система скинов: Wiki/Skins-Resrtorer.md
+      -  Оптимизация жителей: Wiki/Vilager-Trade.md
       -  MC Paint:
           - Главная: Wiki/MC-Paint/MC-Paint.md
           - Блоки: Wiki/MC-Paint/Additions.md
@@ -53,7 +56,3 @@ nav:
           - Ведро с краской: Wiki/MC-Paint/Paint-Bucket.md
           - Инструменты: Wiki/MC-Paint/Custom-Painting-Modifiers.md
           - Обмен картинами: Wiki/MC-Paint/Sharing-paintings.md
-      -  Кастомные крафты: Wiki/Custom-craft.md
-      -  Локатор игроков: Wiki/Locator-bar.md
-      -  Система скинов: Wiki/Skins-Resrtorer.md
-      -  Оптимизация жителей: Wiki/Vilager-Trade.md
