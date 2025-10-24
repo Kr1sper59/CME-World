@@ -105,9 +105,7 @@ th, td {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     color: #A379DF !important;
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
 }
-
 
 /* === Контейнер для корректного поведения flex === */
 .md-main {
@@ -115,7 +113,7 @@ th, td {
     flex-direction: row;
     min-height: 100vh;                        
 }
-/* === Фикс боковой панели с корректной прокруткой === */
+
 .md-sidebar {
     position: fixed;
     top: 60px;                                
@@ -133,7 +131,6 @@ th, td {
 .md-sidebar--secondary {
     right: 0;
 }
-
 
 /* === Основной контент === */
 .md-content {
@@ -168,12 +165,24 @@ th, td {
     will-change: transform, background-color, box-shadow;
 }
 
-/* === Активные и hover-состояния === */
 .md-sidebar--primary .md-nav__link--active {
     background-color: none;
     color: #A379DF !important;
     box-shadow: none;
 }
+
+.md-nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; 
+    color: #A379DF !important; 
+    border: none;
+}
+
+.md-nav__container:hover,
+.md-nav__container:focus {
+    background-color: transparent !important;
+    border: none !important;
+}
+
 
 .md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
     transform: translateX(10px);
@@ -229,10 +238,4 @@ body::before {
 }
 
 
-/* === Hover-эффект для навигационных ссылок (в стиле вкладок) === */
-.md-nav__link:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important; /* полупрозрачный фон */
-    color: #A379DF !important; /* фиолетовый акцент, как в табах */
-    border: none;
-    box-shadow: 0 0 0px rgba(163, 121, 223, 0.25); /* лёгкая светящаяся тень */
-}
+
