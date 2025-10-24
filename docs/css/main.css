@@ -109,7 +109,7 @@ th, td {
 
 /* === Контейнер для корректного поведения flex === */
 .md-main {
-    display: flex;
+    display: fixed;
     flex-direction: row;
     min-height: 100vh;                        
 }
