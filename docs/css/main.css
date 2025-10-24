@@ -51,8 +51,6 @@ th, td {
     color: #e0e0e0;
 }
 
-
-
 /* === Верхняя панель === */
 .md-header {
     background-color: transparent !important;
@@ -107,23 +105,21 @@ th, td {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     color: #A379DF !important;
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
 }
-
 
 /* === Контейнер для корректного поведения flex === */
 .md-main {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;                        /* чтобы контент занимал всю высоту */
+    min-height: 100vh;                        
 }
-/* === Фикс боковой панели с корректной прокруткой === */
+
 .md-sidebar {
     position: fixed;
-    top: 60px;                                 /* учитываем высоту верхней панели */
-    height: calc(100vh - 60px);               /* растягиваем до низа экрана */
-    width: 350px;                              /* ширина сайдбара */
-    overflow-y: auto;                          /* вертикальная прокрутка */
+    top: 60px;                                
+    height: calc(100vh - 60px);               
+    width: 350px;                              
+    overflow-y: auto;                          
     background-color: transparent;
     z-index: 100;
 }
@@ -136,19 +132,16 @@ th, td {
     right: 0;
 }
 
-
 /* === Основной контент === */
 .md-content {
-    margin-left: 180px;    /* отступ от левой панели, можно уменьшить для большей ширины */
-    margin-right: 180px;   /* отступ от правой панели */
+    margin-left: 180px;    
+    margin-right: 180px;   
     flex: 1 1 auto;
     overflow-y: auto;
     padding: 2rem 3rem;
     background-color: transparent;
-    max-width: calc(100% - 480px); /* учитываем отступы боковых панелей */
+    max-width: calc(100% - 480px); 
 }
-
-
 /* === Навигация в сайдбаре === */
 .md-nav {
     background-color: transparent !important;
@@ -172,12 +165,24 @@ th, td {
     will-change: transform, background-color, box-shadow;
 }
 
-/* === Активные и hover-состояния === */
 .md-sidebar--primary .md-nav__link--active {
     background-color: none;
     color: #A379DF !important;
     box-shadow: none;
 }
+
+.md-nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; 
+    color: #A379DF !important; 
+    border: none;
+}
+
+.md-nav__container:hover,
+.md-nav__container:focus {
+    background-color: transparent !important;
+    border: none !important;
+}
+
 
 .md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
     transform: translateX(10px);
@@ -218,11 +223,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 20% 30%, #7c3aed22, transparent 40%),
-                radial-gradient(circle at 80% 70%, #b093f022, transparent 40%);
+    background: radial-gradient(circle at 20% 30%, #9c3aed22, transparent 50%),
+                radial-gradient(circle at 80% 70%, #e093f022, transparent 50%);
     z-index: -1;
     pointer-events: none;
-    animation: move-bg 60s linear infinite;
+    animation: move-bg 30s linear infinite;
     will-change: background-position;
 }
 
@@ -232,18 +237,5 @@ body::before {
     100% { background-position: 0 0, 100% 100%; }
 }
 
-@media (max-width: 768px) {
-    .md-sidebar {
-        display: block !important;      /* показываем боковые панели */
-    }
 
-    .md-content {
-        margin-left: 280px !important;  /* фиксируем отступ слева */
-        margin-right: 280px !important; /* фиксируем отступ справа */
-    }
-
-    .md-tabs {
-        display: flex !important;       /* показываем верхние вкладки */
-    }
-}
 
