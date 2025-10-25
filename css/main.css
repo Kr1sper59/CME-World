@@ -109,19 +109,19 @@ th, td {
 
 /* === Контейнер для корректного поведения flex === */
 .md-main {
-    display: fixed;
-    flex-direction: row;
-    min-height: 100vh;                        
+    display: block; /* или flex, если нужно */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .md-sidebar {
     position: fixed;
     top: 60px;                                
-    height: calc(100vh - 60px);               
-    width: 350px;                              
-    overflow-y: auto;                          
+    height: calc(100vh - 50px);               
+    width: 360px;                              
+    overflow-y: 0;                          
     background-color: transparent;
-    z-index: 100;
+    z-index: 0;
 }
 
 .md-sidebar--primary {
@@ -132,15 +132,25 @@ th, td {
     right: 0;
 }
 
+/* === Фикс динамического изменения высоты при скролле === */
+.md-sidebar__scrollwrap {
+  position: flex;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+  width: 360px !important; 
+  background-color: transparent !important;
+  transform: none !important;
+  will-change: auto !important;
+  z-index: 0 !important;
+}
+
 /* === Основной контент === */
 .md-content {
-    margin-left: 180px;    
-    margin-right: 180px;   
-    flex: 1 1 auto;
-    overflow-y: auto;
-    padding: 2rem 3rem;
+    margin-left: 170px;    
+    margin-right: 170px;   
     background-color: transparent;
-    max-width: calc(100% - 480px); 
 }
 /* === Навигация в сайдбаре === */
 .md-nav {
@@ -150,8 +160,6 @@ th, td {
 .md-nav__title {
     color: #c0c0c0 !important;
     font-weight: 700 !important;
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-    margin-bottom: 0;
     background-color: transparent !important;
 }
 
@@ -236,6 +244,4 @@ body::before {
     50% { background-position: 50% 50%, 50% 50%; }
     100% { background-position: 0 0, 100% 100%; }
 }
-
-
 
