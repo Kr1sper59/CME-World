@@ -31,7 +31,7 @@
 Если ваш лаунчер не поддерживает установку через [Modrinth](https://modrinth.com), выполните следующие шаги:
 
 1. Скачайте сборку с [Modrinth](https://modrinth.com/modpack/cme-world).
-2. Конвертируйте ее в .zip архив с при помощи сайта [mrpacktozip](https://mrpacktozip.com/)
+2. Конвертируйте ее в .zip архив с при помощи сайта [mrpacktozip](https://mrpacktozip.com/).
 3. Создайте новую сборку с параметрами:  
    - **Loader:** Fabric  
    - **Game version:** 1.21.8
