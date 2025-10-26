@@ -1,13 +1,33 @@
 {
-    "providers": [
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/logo.png",
-            "ascent": 7,
-            "height": 25,
-            "chars": [
-                "\u2586"
-            ]
-        }
-    ]
+  "providers" : [ {
+    "type" : "bitmap",
+    "file" : "minecraft:font/ban.png",
+    "ascent" : 9,
+    "height" : 10,
+    "chars" : [ "\uF251" ]
+  }, {
+    "type" : "bitmap",
+    "file" : "minecraft:font/cmeworld.png",
+    "ascent" : 9,
+    "height" : 10,
+    "chars" : [ "\uF321" ]
+  }, {
+    "type" : "bitmap",
+    "file" : "minecraft:font/indest.png",
+    "ascent" : 9,
+    "height" : 10,
+    "chars" : [ "\uF789" ]
+  }, {
+    "type" : "bitmap",
+    "file" : "minecraft:font/minecraft.png",
+    "ascent" : 9,
+    "height" : 10,
+    "chars" : [ "\uF760" ]
+  }, {
+    "type" : "bitmap",
+    "file" : "minecraft:font/logo.png",
+    "ascent" : 7,
+    "height" : 25,
+    "chars" : [ "\u2586" ]
+  } ]
 }
