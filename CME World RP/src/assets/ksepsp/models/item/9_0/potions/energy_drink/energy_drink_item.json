@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "ksepsp:item/energy_drink",
-        "layer1": "ksepsp:item/energy_drink_overlay"
-    }
-}

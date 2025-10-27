@@ -1,6 +1,0 @@
-{
-	"parent": "ksepsp:item/source_models/gen_shield",
-	"textures": {
-		"layer0": "ksepsp:item/wheel_of_misfortune"
-	}
-}

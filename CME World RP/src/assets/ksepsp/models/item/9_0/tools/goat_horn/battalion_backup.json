@@ -1,6 +1,0 @@
-{
-	"parent": "ksepsp:item/9_0/tools/goat_horn/goat_horn",
-	"textures": {
-		"layer0": "ksepsp:item/battalion_backup"
-	}
-}
