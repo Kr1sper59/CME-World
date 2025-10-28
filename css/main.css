@@ -81,7 +81,7 @@ th, td {
     margin: 0 !important;
 }
 
-/* === Вкладки (табы) === */
+/* === Табы === */
 .md-tabs {
     display: flex !important;
     background-color: transparent !important;
@@ -107,14 +107,20 @@ th, td {
     color: #A379DF !important;
 }
 
-/* === Контейнер для корректного поведения flex === */
+/* === main === */
 .md-main {
-    display: block; /* или flex, если нужно */
+    display: block; 
     min-height: 100vh;
     box-sizing: border-box;
 }
 
+.md-content {
+    margin-left: 170px;    
+    margin-right: 170px;   
+    background-color: transparent;
+}
 
+/* ===Cайдбар === */
 .md-sidebar {
     position: fixed;
     top: 0px;                                
@@ -133,27 +139,25 @@ th, td {
     right: 0;
 }
 
-/* === Фикс динамического изменения высоты при скролле === */
-.md-sidebar__scrollwrap {
-  position: flex;
-  top: 0 !important;
-  left: 0 !important;
-  height: 100vh !important;
-  overflow-y: auto !important;
-  width: 360px !important; 
-  background-color: transparent !important;
-  transform: none !important;
-  will-change: auto !important;
-  z-index: 0 !important;
+.md-sidebar--primary .md-nav__link--active {
+    background-color: none;
+    color: #A379DF !important;
+    box-shadow: none;
 }
 
-/* === Основной контент === */
-.md-content {
-    margin-left: 170px;    
-    margin-right: 170px;   
-    background-color: transparent;
+.md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
+    transform: translateX(10px);
 }
-/* === Навигация в сайдбаре === */
+
+.md-sidebar--secondary .md-nav__link:hover:not(.md-nav__link--active) {
+    transform: translateX(-10px);
+}
+
+.md-sidebar__scrollwrap {
+  position: flex;
+  height: 100vh !important;
+}
+
 .md-nav {
     background-color: transparent !important;
 }
@@ -174,42 +178,21 @@ th, td {
     will-change: transform, background-color, box-shadow;
 }
 
-.md-sidebar--primary .md-nav__link--active {
-    background-color: none;
-    color: #A379DF !important;
-    box-shadow: none;
-}
-
 .md-nav__link:hover {
     background-color: rgba(255, 255, 255, 0.1) !important; 
-    color: #A379DF !important; 
-    border: none;
 }
 
 .md-nav__container:hover,
 .md-nav__container:focus {
     background-color: transparent !important;
-    border: none !important;
 }
 
-
-.md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(10px);
-}
-
-.md-sidebar--secondary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(-10px);
-}
-
-/* === Фикс градиента правой панели === */
 .md-nav__toggle:checked + .md-nav__link,
 label:focus {
     box-shadow: none !important;
 }
 
-/* === Фикс градиента левой панели === */
 .md-nav--secondary .md-nav__title {
-    background: transparent !important;
     box-shadow: none !important;
 }
 
