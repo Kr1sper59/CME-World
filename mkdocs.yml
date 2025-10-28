@@ -45,14 +45,15 @@ nav:
       -  Core Protect: Wiki/Core-Protect.md
       -  BlueMap: Wiki/Bluemap.md
       -  Emotecraft: Wiki/Emotecraft.md
+      -  Locator bar: Wiki/Locator-bar.md
+      -  Emoji: Wiki/Emoji.md
+      -  CME World Resourse pack: Wiki/Resourspack.md
       -  Кастомные крафты: Wiki/Custom-craft.md
-      -  Локатор игроков: Wiki/Locator-bar.md
-      -  Emotes: Wiki/Emotes.md
       -  SkinsRestorer: Wiki/SkinsResrtorer.md
       -  Skin Shuffle: Wiki/SkinShuffle.md
       -  Оптимизация жителей: Wiki/Vilager-Trade.md
       -  MC Paint:
-          - Главная: Wiki/MC-Paint/MC-Paint.md
+          - Главная: Wiki/MC-Paint/index.md
           - Блоки: Wiki/MC-Paint/Additions.md
           - Студия: Wiki/MC-Paint/Studio.md
           - Ведро с краской: Wiki/MC-Paint/Paint-Bucket.md
