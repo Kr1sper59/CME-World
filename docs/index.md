@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # CME World
 
 Добро пожаловать на **наш Minecraft проект**!  

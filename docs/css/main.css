@@ -41,12 +41,11 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 1em;
-    background-color: transparent; /* сохраняем прозрачность */
     border-radius: 6px;
 }
 
 th, td {
-    border: 1px solid #30363d; /* тонкая граница для читаемости */
+    border: 1px solid #30363d; 
     padding: 10px;
     color: #e0e0e0;
 }
@@ -54,7 +53,6 @@ th, td {
 /* === Верхняя панель === */
 .md-header {
     background-color: transparent !important;
-    border: none !important;
     box-shadow: none !important;
     position: flex;
     top: 0;
