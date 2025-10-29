@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## IP Сервера:
+## IP Сервера
 `
 cmeworld.fun
 `

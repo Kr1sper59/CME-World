@@ -7,7 +7,7 @@ hide:
 
 ## Здесь собраны миры всех вайпов на серверах Mayhem, Elysium и CME World
 
-### Список доступных миров: 
+### Список доступных миров
 - Mayhem 1 22.07.2024-30.08.2024 (архив утерян)
 - Mayhem 2 1.09.2024-18.10.2024 (архив утерян)
 - [Mayhem 3](https://mega.nz/file/hFRGHBrD#HXTMXJUHfWZBoe7eKso1B65rMCS9f8Q2rUumgLEq1QU) 21.10.2024-1.02.2025
