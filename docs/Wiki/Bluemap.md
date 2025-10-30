@@ -1,6 +1,6 @@
 # BlueMap
 
-**BlueMap** - это онлайн-карта мира CME World в 3D.
+**BlueMap** - Oнлайн-карта мира CME World в 3D.
 
 ---
 

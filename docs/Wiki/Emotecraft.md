@@ -1,6 +1,6 @@
 # Emotecraft
 
-**Emotecraft** - добавляет эмоции и анимации в Minecraft.
+**Emotecraft** - Добавляет эмоции и анимации в Minecraft.
 
 ---
 

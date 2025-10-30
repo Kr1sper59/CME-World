@@ -35,10 +35,11 @@ nav:
      -  О сервере: index.md
   -  Правила:
      -  Правила: Rules/index.md
-  -  Полезные моды:
-     -  Полезные моды: Modpack/index.md
-  -  Архив миров:
-     -  Архив миров: World-archve/index.md
+  -  Прочее:
+     -  Прочее: Other/index.md
+     -  ToDo: Other/ToDo.md
+     -  Архив миров: Other/World-archve.md
+     -  Рекомендуемые моды: Other/Mods.md
   -  Вики:
       -  Вики: Wiki/index.md
       -  Simple Voice Chat: Wiki/Simple-Voice-Chat.md
@@ -59,5 +60,3 @@ nav:
           - Ведро с краской: Wiki/MC-Paint/Paint-Bucket.md
           - Инструменты: Wiki/MC-Paint/Custom-Painting-Modifiers.md
           - Обмен картинами: Wiki/MC-Paint/Sharing-paintings.md
-
-
