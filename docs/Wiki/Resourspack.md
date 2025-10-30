@@ -1,6 +1,6 @@
 # CME World Resourse pack
 
-**CME World Resourse pack** - ресурспак, созданый специально для сервера CME World
+**CME World RP** - ресурспак, созданый специально для сервера CME World
 
 > ⚠️ Ресурспак является обязательным для скачивания!
 
@@ -10,14 +10,14 @@
 - Кастомный TAB лист сервера
 - Корректное отображение эмоджи в чате
 - Корректная работа датапака [MC Paint](/Wiki/MC-Paint/)
-- Скоро: Интеграция с KSEPSP
+- Интеграция с [KSEPSP](https://definitelyawhale.github.io/ksepsp_website/)
 
 ---
 
 ## Установка
 
 ### 1. Установка через лаунчер
-Ресурспак доступен на платформе [Modrinth](https://modrinth.com/resourcepack/cme-world-resourse-pack). Если ваш лаунчер поддерживает установку паков из Modrinth, выполните следующие шаги:
+Ресурспак доступен на платформе [Modrinth](https://modrinth.com/resourcepack/cme-world-rp). Если ваш лаунчер поддерживает установку паков из Modrinth, выполните следующие шаги:
 
 1. В лаунчере откройте поиск ресурсов и введите `CME World Resource Pack`.
 2. Нажмите **Установить**.
@@ -26,7 +26,7 @@
 ### 2. Ручная установка
 Если ваш лаунчер не поддерживает установку через [Modrinth](https://modrinth.com), выполните следующие шаги:
 
-1. Скачайте последнюю версию ресурспака с [Modrinth](https://modrinth.com/resourcepack/cme-world-resourse-pack)
+1. Скачайте последнюю версию ресурспака с [Modrinth](https://modrinth.com/resourcepack/cme-world-rp)
 2. Откройте папку сборкии поместите скачанный ранее файл в папку `resourspack`
 3. В настройках игры активируйте ресурспак
 
