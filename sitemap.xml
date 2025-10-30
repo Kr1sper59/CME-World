@@ -5,7 +5,19 @@
          <lastmod>2025-10-30</lastmod>
     </url>
     <url>
-         <loc>https://cmeworld.fun/Modpack/</loc>
+         <loc>https://cmeworld.fun/Other/</loc>
+         <lastmod>2025-10-30</lastmod>
+    </url>
+    <url>
+         <loc>https://cmeworld.fun/Other/Mods/</loc>
+         <lastmod>2025-10-30</lastmod>
+    </url>
+    <url>
+         <loc>https://cmeworld.fun/Other/ToDo/</loc>
+         <lastmod>2025-10-30</lastmod>
+    </url>
+    <url>
+         <loc>https://cmeworld.fun/Other/World-archve/</loc>
          <lastmod>2025-10-30</lastmod>
     </url>
     <url>
@@ -82,10 +94,6 @@
     </url>
     <url>
          <loc>https://cmeworld.fun/Wiki/MC-Paint/Studio/</loc>
-         <lastmod>2025-10-30</lastmod>
-    </url>
-    <url>
-         <loc>https://cmeworld.fun/World-archve/</loc>
          <lastmod>2025-10-30</lastmod>
     </url>
 </urlset>
