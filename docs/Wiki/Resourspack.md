@@ -1,4 +1,4 @@
-# CME World Resourse pack
+# CME World RP
 
 **CME World RP** - ресурспак, созданый специально для сервера CME World
 
