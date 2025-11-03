@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: 'JetBrainsMono', Arial, sans-serif;
-    background-color: #18181B;
+    background-color: #231C2C;
     color: #e0e0e0;
     line-height: 0;
     margin: 0;
@@ -120,8 +120,7 @@ th, td {
 
 /* ===Cайдбар === */
 .md-sidebar {
-    position: fixed;
-    top: 0px;                                
+    position: fixed;                              
     height: calc(100vh - 50px);               
     width: 360px;                              
     overflow-y: 0;                          
@@ -153,11 +152,7 @@ th, td {
 
 .md-sidebar__scrollwrap {
   position: flex;
-  height: 100vh !important;
-}
-
-.md-nav {
-    background-color: transparent !important;
+  height: 90vh !important;
 }
 
 .md-nav__title {
@@ -176,6 +171,9 @@ th, td {
     will-change: transform, background-color, box-shadow;
 }
 
+.md-nav__container{
+    background-color: #231C2C !important;
+}
 .md-nav__link:hover {
     background-color: rgba(255, 255, 255, 0.1) !important; 
 }
@@ -205,25 +203,5 @@ img:hover {
     transform: scale(1.02);
 }
 
-/* === Фоновая анимация === */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 20% 30%, #9c3aed22, transparent 50%),
-                radial-gradient(circle at 80% 70%, #e093f022, transparent 50%);
-    z-index: -1;
-    pointer-events: none;
-    animation: move-bg 30s linear infinite;
-    will-change: background-position;
-}
 
-@keyframes move-bg {
-    0% { background-position: 0 0, 100% 100%; }
-    50% { background-position: 50% 50%, 50% 50%; }
-    100% { background-position: 0 0, 100% 100%; }
-}
 
