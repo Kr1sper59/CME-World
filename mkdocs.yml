@@ -16,12 +16,14 @@ theme:
   font:
     code: JetBrainsMono
   custom_dir: overrides
+
 extra_css:
   - css/main.css
 extra_javascript:
   - 'js/main.js'
 extra:
   homepage: https://cmeworld.fun 
+
 plugins: []
 markdown_extensions:
   - pymdownx.highlight:
