@@ -7,9 +7,10 @@ body {
     font-family: 'JetBrainsMono', Arial, sans-serif;
     background-color: #231C2C;
     color: #e0e0e0;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
+}
+:root  > * {
+  --md-primary-fg-color:#A379DF;
+  --md-accent-fg-color: #ad80ec;
 }
 
 /* === Заголовки === */
