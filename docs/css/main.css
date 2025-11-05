@@ -103,8 +103,12 @@ th, td {
 .md-tabs__link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
+}
+
+.md-tabs__item--active > .md-tabs__link {
     color: #A379DF !important;
 }
+
 
 /* === main === */
 .md-main {
@@ -138,9 +142,7 @@ th, td {
 }
 
 .md-sidebar--primary .md-nav__link--active {
-    background-color: none;
     color: #A379DF !important;
-    box-shadow: none;
 }
 
 .md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
@@ -163,7 +165,7 @@ th, td {
 }
 
 .md-nav__link {
-    padding: 10px 15px !important;
+    padding: 10px 15px !important;    background-color: none;
     border-radius: 6px !important;
     color: #c0c0c0 !important;
     background-color: transparent !important;
@@ -203,6 +205,3 @@ img {
 img:hover {
     transform: scale(1.02);
 }
-
-
-
