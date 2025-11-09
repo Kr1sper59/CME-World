@@ -1,0 +1,83 @@
+@media only screen and (max-width: 768px) {
+  /* --- Сброс неожиданных сдвигов --- */
+  html, body, .md-container, .md-main, .md-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    overflow-x: hidden !important;
+  }
+
+  /* --- Боковая панель --- */
+  .md-sidebar--primary {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 80% !important;
+    max-width: 320px !important;
+    height: 100vh !important;
+    background-color: #231C2C !important;
+    overflow-y: auto !important;
+    transform: translateX(-100%) !important;  /* скрыта */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 3000 !important;
+  }
+
+  /* --- При открытии чекбокса (#__drawer) --- */
+  #__drawer:checked ~ .md-container .md-sidebar--primary,
+  body[data-md-state="drawer"] .md-sidebar--primary {
+    transform: translateX(0) !important;  /* появляется */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: 0s !important;
+  }
+
+  /* --- Второй сайдбар убираем --- */
+  .md-sidebar--secondary {
+    display: none !important;
+  }
+
+  /* --- Контент --- */
+  .md-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    background: transparent !important;
+  }
+
+  /* --- Затемнение заднего фона --- */
+  .md-overlay {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2500 !important;
+    background-color: #231C2C !important;
+    transition: opacity 0.3s ease;
+  }
+
+  /* --- Навигация в меню --- */
+  .md-nav {
+    padding: 1rem !important;
+  }
+
+  .md-nav__title {
+    color: #A379DF !important;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md-nav__link {
+    display: block !important;
+    padding: 0.75rem 1rem !important;
+    color: #e0e0e0 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .md-nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+}
