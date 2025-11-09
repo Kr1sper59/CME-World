@@ -1,3 +1,7 @@
+/* === css для мобильных устройств === */
+@import url("/css/mobile.css") screen and (max-width: 1000px);
+
+
 /* === Базовые стили === */
 html {
     scroll-behavior: smooth;
@@ -205,3 +209,4 @@ img {
 img:hover {
     transform: scale(1.02);
 }
+
