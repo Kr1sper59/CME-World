@@ -19,6 +19,7 @@ theme:
 
 extra_css:
   - css/main.css
+  - css/mobile.css
 extra_javascript:
   - 'js/main.js'
 extra:
