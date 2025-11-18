@@ -1,5 +1,5 @@
 /* === css для мобильных устройств === */
-@import url("/css/mobile.css") screen and (max-width: 1000px);
+@import url("./mobile.css") screen and (max-width: 1000px);
 
 
 /* === Базовые стили === */
@@ -132,7 +132,7 @@ th, td {
     position: fixed;                              
     height: calc(100vh - 50px);               
     width: 360px;                              
-    overflow-y: 0;                          
+    overflow-y: auto;                          
     background-color: transparent;
     z-index: 10;
 }
@@ -158,7 +158,8 @@ th, td {
 }
 
 .md-sidebar__scrollwrap {
-  position: flex;
+  display: flex;
+  flex-direction: column;
   height: 90vh !important;
 }
 
@@ -169,7 +170,7 @@ th, td {
 }
 
 .md-nav__link {
-    padding: 10px 15px !important;    background-color: none;
+    padding: 10px 15px !important;    background-color: transparent;
     border-radius: 6px !important;
     color: #c0c0c0 !important;
     background-color: transparent !important;

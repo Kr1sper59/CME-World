@@ -7,6 +7,11 @@
     overflow-x: hidden !important;
   }
 
+  /* --- Табы скрываем на мобильных --- */
+  .md-tabs {
+    display: none !important;
+  }
+
   /* --- Боковая панель --- */
   .md-sidebar--primary {
     position: fixed !important;
