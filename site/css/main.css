@@ -1,212 +1,179 @@
-/* === css для мобильных устройств === */
-@import url("/css/mobile.css") screen and (max-width: 1000px);
-
-
-/* === Базовые стили === */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'JetBrainsMono', Arial, sans-serif;
-    background-color: #231C2C;
-    color: #e0e0e0;
-}
-:root  > * {
-  --md-primary-fg-color:#A379DF;
-  --md-accent-fg-color: #ad80ec;
-}
-
-/* === Заголовки === */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-/* === Блок кода === */
-pre {
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
-    padding: 0px;
-    border-radius: 6px;
-    border: 1px solid #30363d !important;
-    overflow-x: auto;
-    margin: 1em 0;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.8rem;
-    line-height: 1.4;
-    position: relative;
-}
-
-/* === Таблицы === */
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1em;
-    border-radius: 6px;
-}
-
-th, td {
-    border: 1px solid #30363d; 
-    padding: 10px;
-    color: #e0e0e0;
-}
-
-/* === Верхняя панель === */
-.md-header {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    position: flex;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 60px;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(10px);
-}
-
-.md-header__inner {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center;
-    max-width: 100% !important;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.md-header__title {
-    display: flex;
-    align-items: center;
+@media only screen and (max-width: 768px) {
+  /* --- Сброс и база --- */
+  html, body, .md-container, .md-main, .md-content {
     margin: 0 !important;
-}
+    padding: 0 !important;
+    transform: none !important;
+    overflow-x: hidden !important;
+  }
 
-/* === Табы === */
-.md-tabs {
-    display: flex !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    width: 100%;
-    position: relative;
-    z-index: 999;
-}
+  /* --- Полностью скрываем все элементы табов и верхней навигации --- */
+  .md-tabs,
+  [data-md-toggle="drawer"] ~ .md-header .md-header__nav,
+  .md-header__option,
+  .md-header__source {
+    display: none !important;
+  }
 
-.md-tabs__link {
-    padding: 0.5rem 1rem !important;
-    border-radius: 20px;
-    color: #e0dede !important;
-    display: block !important;
-    margin: 0;
-    transition: all 0.25s ease-in-out;
-}
-
-.md-tabs__link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-}
-
-.md-tabs__item--active > .md-tabs__link {
-    color: #A379DF !important;
-}
-
-
-/* === main === */
-.md-main {
-    display: block; 
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
-.md-content {
-    margin-left: 170px;    
-    margin-right: 170px;   
-    background-color: transparent;
-}
-
-/* ===Cайдбар === */
-.md-sidebar {
-    position: fixed;                              
-    height: calc(100vh - 50px);               
-    width: 360px;                              
-    overflow-y: 0;                          
-    background-color: transparent;
-    z-index: 10;
-}
-
-.md-sidebar--primary {
-    left: 0;
-}
-
-.md-sidebar--secondary {
-    right: 0;
-}
-
-.md-sidebar--primary .md-nav__link--active {
-    color: #A379DF !important;
-}
-
-.md-sidebar--primary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(10px);
-}
-
-.md-sidebar--secondary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(-10px);
-}
-
-.md-sidebar__scrollwrap {
-  position: flex;
-  height: 90vh !important;
-}
-
-.md-nav__title {
-    color: #c0c0c0 !important;
-    font-weight: 700 !important;
-    background-color: transparent !important;
-}
-
-.md-nav__link {
-    padding: 10px 15px !important;    background-color: none;
-    border-radius: 6px !important;
-    color: #c0c0c0 !important;
-    background-color: transparent !important;
-    text-decoration: none !important;
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
-    will-change: transform, background-color, box-shadow;
-}
-
-.md-nav__container{
+  /* --- Фиксируем хедер --- */
+  .md-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     background-color: #231C2C !important;
-}
-.md-nav__link:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important; 
+    backdrop-filter: none !important;
+    height: 60px !important;
+    z-index: 4000 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  }
+
+  .md-header__inner {
+    padding: 0 1rem !important;
+    justify-content: flex-start !important;
+  }
+
+  /* --- Стили для кнопки меню (гамбургер) --- */
+  .md-header__button {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    color: #A379DF !important;
+  }
+
+  /* --- Боковая панель --- */
+  .md-sidebar--primary {
+    position: fixed !important;
+    top: 60px !important; /* Отступ под хедер */
+    left: 0 !important;
+    width: 85% !important;
+    max-width: 100px !important;
+    height: calc(100vh - 60px) !important;
+    background: #231C2C !important;
+    border-right: 1px solid rgba(255,255,255,0.1) !important;
+    transform: translateX(-100%) !important;
+    opacity: 1 !important;
+    visibility: hidden !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    z-index: 3500 !important;
+    overflow-y: auto !important;
+  }
+
+  /* --- Когда меню открыто --- */
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+  }
+
+  /* --- Скрываем второй сайдбар --- */
+  .md-sidebar--secondary {
+    display: none !important;
+  }
+
+  /* --- Контент --- */
+  .md-content {
+    width: 100% !important;
+    margin: 60px 0 0 0 !important; /* Отступ для хедера */
+    padding: 1rem !important;
+    background: transparent !important;
+    min-height: calc(100vh - 60px) !important;
+  }
+
+  /* --- Оверлей --- */
+  .md-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 3000 !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  [data-md-toggle="drawer"]:checked ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* --- Стили навигации в сайдбаре --- */
+  .md-sidebar__scrollwrap {
+    background: #231C2C !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .md-nav {
+    background: #231C2C !important;
+    padding: 0 !important;
+  }
+
+  .md-nav__title {
+    color: #A379DF !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    padding: 1.5rem 1rem 0.5rem !important;
+    background: #231C2C !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+    margin: 0 !important;
+  }
+
+  .md-nav__list {
+    background: #231C2C !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .md-nav__item {
+    background: #231C2C !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+  }
+
+  .md-nav__link {
+    display: block !important;
+    padding: 1rem 1.5rem !important;
+    color: #e0e0e0 !important;
+    text-decoration: none !important;
+    background: #231C2C !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+  }
+
+  .md-nav__link:hover,
+  .md-nav__link:focus {
+    background: rgba(163, 121, 223, 0.1) !important;
+    color: #A379DF !important;
+  }
+
+  .md-nav__link--active {
+    color: #A379DF !important;
+    background: rgba(163, 121, 223, 0.15) !important;
+    border-left: 3px solid #A379DF !important;
+  }
+
+  /* --- Вложенная навигация --- */
+  .md-nav--secondary .md-nav__title {
+    display: none !important;
+  }
+
+  .md-nav__item--nested > .md-nav__link {
+    position: relative;
+  }
+
+  .md-nav__item--nested > .md-nav__link::after {
+    content: "›";
+    position: absolute;
+    right: 1.5rem;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+
+  .md-nav__item--nested .md-nav {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-left: 3px solid rgba(163, 121, 223, 0.3) !important;
+  }
 }
 
-.md-nav__container:hover,
-.md-nav__container:focus {
-    background-color: transparent !important;
-}
-
-.md-nav__toggle:checked + .md-nav__link,
-label:focus {
-    box-shadow: none !important;
-}
-
-.md-nav--secondary .md-nav__title {
-    box-shadow: none !important;
-}
-
-/* === Изображения === */
-img {
-    max-width: 100%;
-    border-radius: 6px;
-    transition: transform 0.2s ease;
-}
-
-img:hover {
-    transform: scale(1.02);
-}
-
+/* Убираем импорт mobile.css если он вызывает проблемы */
+/* @import url("./mobile.css") screen and (max-width: 1000px); */

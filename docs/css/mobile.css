@@ -7,6 +7,13 @@
     overflow-x: hidden !important;
   }
 
+  /* --- Табы и навигация скрываем на мобильных --- */
+  .md-tabs,
+  .md-header-nav,
+  .md-nav[data-md-level="0"] .md-nav__list {
+    display: none !important;
+  }
+
   /* --- Боковая панель --- */
   .md-sidebar--primary {
     position: fixed !important;
@@ -54,19 +61,21 @@
     width: 100vw;
     height: 100vh;
     z-index: 2500 !important;
-    background-color: #231C2C !important;
+    background-color: rgba(35, 28, 44, 0.8) !important;
     transition: opacity 0.3s ease;
   }
 
   /* --- Навигация в меню --- */
   .md-nav {
     padding: 1rem !important;
+    background-color: #231C2C !important;
   }
 
   .md-nav__title {
     color: #A379DF !important;
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    background-color: transparent !important;
   }
 
   .md-nav__link {
@@ -75,9 +84,28 @@
     color: #e0e0e0 !important;
     text-decoration: none !important;
     border-bottom: 1px solid rgba(255,255,255,0.05);
+    background-color: transparent !important;
   }
 
   .md-nav__link:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  /* --- Исправляем фон для вложенных элементов --- */
+  .md-nav__item .md-nav {
+    background-color: transparent !important;
+  }
+
+  .md-nav__item--nested {
+    background-color: transparent !important;
+  }
+
+  /* --- Хедер на мобильных --- */
+  .md-header {
+    background-color: #231C2C !important;
+    backdrop-filter: none !important;
   }
 }
+
+/* === css для мобильных устройств === */
+@import url("./mobile.css") screen and (max-width: 1000px);
