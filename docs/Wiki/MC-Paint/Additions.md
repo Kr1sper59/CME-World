@@ -8,7 +8,7 @@
 | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/blocks/custom_painting_filled.png?raw=true" alt="Пользовательская картина" width="100"/> | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/items/custom_painting.png?raw=true" alt="Пользовательская картина" width="100"/> | **Пользовательская картина**  
 Картина, созданная игроком, которую можно разместить где угодно, включая пол и потолок. Получается с помощью кнопки «Экспорт» в Студии, при этом расходуется 1 ванильная картина. После установки на неё можно применять различные Модификаторы пользовательских картин, чтобы изменить внешний вид или поведение. |
 | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/blocks/paint_bucket.png?raw=true" alt="Ведро краски" width="100"/> | <img src="https://github.com/Eroxen/MC-Paint-datapack/blob/wiki_assets/mcpaint/items/paint_bucket.png?raw=true" alt="Ведро краски" width="100"/> | **Ведро краски**  
-Позволяет сохранять дополнительные цвета в палитре и может использоваться как декорация. | v1.3 |
+Позволяет сохранять дополнительные цвета в палитре и может использоваться как декорация. |
 
 ## Предметы
 | Иконка | Описание | 
