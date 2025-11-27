@@ -6,7 +6,10 @@ theme:
   language: ru
   features:
     - navigation.indexes
+    - navigation.instant
     - navigation.tabs
+    - content.code.copy
+    - optimize
   logo: assets/CME World logo border.png
   favicon: assets/CME World logo border.png
   palette:
@@ -25,7 +28,9 @@ extra_javascript:
 extra:
   homepage: https://cmeworld.fun 
 
-plugins: []
+plugins:
+  - minify:
+      minify_html: true
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
