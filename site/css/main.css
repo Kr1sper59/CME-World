@@ -1,7 +1,6 @@
 /* === css для мобильных устройств === */
 @import url("/css/mobile.css") screen and (max-width: 1000px);
 
-
 /* === Базовые стили === */
 html {
     scroll-behavior: smooth;
@@ -14,7 +13,7 @@ body {
 }
 :root  > * {
   --md-primary-fg-color:#A379DF;
-  --md-accent-fg-color: #ad80ec;
+  --md-accent-fg-color: #8e69c2;
 }
 
 /* === Заголовки === */
@@ -207,6 +206,6 @@ img {
 }
 
 img:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 
