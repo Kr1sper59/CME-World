@@ -2,22 +2,17 @@
 
 **Рекомендуемые моды** - моды, без которых можно обойтись, но без них теряется некоторая часть функционала сервера.
 
----
+[Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat) - Мод для голосового чата в майнкрафте
 
-[Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat)
-> Мод для голосового чата в майнкрафте
+[Voice Messages](https://modrinth.com/plugin/voicemessages) - Добавляет голосовые сообщения в игровой чат
+> Для работы мода необходим Simple Voice Chat
 
-[Voice Messages](https://modrinth.com/plugin/voicemessages)
-> Позволяет отправлять голосовые сообщения в чат
+[Emotecraft](https://modrinth.com/plugin/emotecraft) - Добавляет эмоции в игру
 
-[Emotecraft](https://modrinth.com/plugin/emotecraft)
-> Добавляет колесо эмоций 
+[Bendable Cuboids](https://modrinth.com/mod/bendable-cuboids) - Библиотека для Emotecraft, добавляющая сгибание конечностей
+> Библиотека нужна только если вы используете мод Sodium 
 
-[Bendable Cuboids](https://modrinth.com/mod/bendable-cuboids)
-> Вспомогательная библиотека для правильного сгибания конечностей в моде Emotecraft при использовании Sodium
-
-[Bobby](https://modrinth.com/mod/bobby)
-> Мод позволяет кэшировать чанки что значительно ускоряет их загрузку и позволяет ставить прогрузку мира выше, чем на сервере
+[Bobby](https://modrinth.com/mod/bobby) - Мод для увеличения прорисовки чанков на сервере
 
 ---
 
@@ -30,7 +25,7 @@
 ## Установка
 
 ### 1. Установка через лаунчер
-Модпак доступен на [Modrinth](https://modrinth.com/modpack/cme-world). Если ваш лаунчер поддерживает установку сборок из Modrinth, выполните следующие шаги:
+Модпак доступен на [Modrinth](https://modrinth.com/modpack/cmeworld). Если ваш лаунчер поддерживает установку сборок из Modrinth, выполните следующие шаги:
 
 1. В лаунчере откройте поиск модпаков и введите `CME World`.
 2. Нажмите **Установить**.
@@ -39,13 +34,17 @@
 ### 2. Ручная установка
 Если ваш лаунчер не поддерживает установку через [Modrinth](https://modrinth.com), выполните следующие шаги:
 
-1. Скачайте сборку с [Modrinth](https://modrinth.com/modpack/cme-world).
-2. Конвертируйте ее в .zip архив с при помощи сайта [mrpacktozip](https://mrpacktozip.com/).
+1. Скачайте сборку с [Modrinth](https://modrinth.com/modpack/cmeworld).
+2. Конвертируйте ее в .zip архив с при помощи сайта [mrpacktozip.com](https://mrpacktozip.com/).
 3. Создайте новую сборку с параметрами:  
-   - **Loader:** Fabric  
-   - **Game version:** 1.21.8
-   - **Version:** 0.17.3(latest release)
+```java
+Loader: Fabric  
+Game version: 1.21.8
+Version: 0.17.3(latest release)
+```
 4. Откройте папку созданной сборки и переместите в нее содержимое конвертированного архива.
 5. Запустите игру через созданную сборку.
+
+---
 
 Если что-то не получилось, не стесняйтесь обращаться в тикеты в [Discord сервере](https://dsc.gg/cme-world) - мы всегда готовы помочь!
